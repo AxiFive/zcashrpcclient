@@ -35,7 +35,7 @@ type ZGetNewAddressCmd struct {
 	MinConf *int `jsonrpcdefault:"1"`
 }
 
-// NewGetNewAddressCmd returns a new instance which can be used to issue a
+// NewZGetNewAddressCmd returns a new instance which can be used to issue a
 // getnewaddress JSON-RPC command.
 //
 // The parameters which are pointers indicate they are optional. Passing nil
@@ -76,13 +76,13 @@ func NewZListReceivedByAddressCmd(address string, minConf *int) *ZListReceivedBy
 	}
 }
 
-// ImportKeyCmd defines the z_importkey JSON-RPC command.
+// ZImportKeyCmd defines the z_importkey JSON-RPC command.
 type ZImportKeyCmd struct {
 	ZKey   string
 	Rescan *bool `jsonrpcdefault:"true"`
 }
 
-// NewImportKeyCmd returns a new instance which can be used to issue a
+// NewZImportKeyCmd returns a new instance which can be used to issue a
 // z_importkey JSON-RPC command.
 //
 // The parameters which are pointers indicate they are optional.  Passing nil
@@ -142,7 +142,7 @@ func NewZExportWalletCmd(filename string) *ZExportWalletCmd {
 	}
 }
 
-// ZListAccountsCmd defines the z_listaccounts JSON-RPC command.
+// ZListAddressesCmd defines the z_listaccounts JSON-RPC command.
 type ZListAddressesCmd struct {
 	MinConf *int `jsonrpcdefault:"1"`
 }
@@ -163,7 +163,7 @@ type ZListOperationIdsCmd struct {
 	MinConf *int `jsonrpcdefault:"1"`
 }
 
-// ZListOperationIdsCmd returns a new instance which can be used to issue a
+// NewZListOperationIdsCmd returns a new instance which can be used to issue a
 // z_listoperationids JSON-RPC command.
 //
 // The parameters which are pointers indicate they are optional.  Passing nil
@@ -179,7 +179,7 @@ type ZGetOperationResultCmd struct {
 	MinConf *int `jsonrpcdefault:"1"`
 }
 
-// ZGetOperationResultCmd returns a new instance which can be used to issue a
+// NewZGetOperationResultCmd returns a new instance which can be used to issue a
 // z_getoperationresult JSON-RPC command.
 //
 // The parameters which are pointers indicate they are optional.  Passing nil
@@ -195,7 +195,7 @@ type ZGetOperationStatusCmd struct {
 	MinConf *int `jsonrpcdefault:"1"`
 }
 
-// ZGetOperationStatusCmd returns a new instance which can be used to issue a
+// NewZGetOperationStatusCmd returns a new instance which can be used to issue a
 // z_getoperationstatus JSON-RPC command.
 //
 // The parameters which are pointers indicate they are optional.  Passing nil

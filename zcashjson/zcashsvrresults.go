@@ -14,7 +14,7 @@ type ZOperationStatusError struct {
 // ZGetOperationStatusResult models the data from the z_getoperationresult and
 // z_getoperationstatus commands.
 type ZGetOperationStatusResult struct {
-	Id            string                `json:"id"`
+	ID            string                `json:"id"`
 	Status        string                `json:"status"`
 	CreationTime  int                   `json:"creation_time"`
 	Result        map[string]string     `json:"result"`

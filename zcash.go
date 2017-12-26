@@ -424,11 +424,7 @@ type FutureZExportWalletResult chan *response
 // key corresponding to the passed address
 func (r FutureZExportWalletResult) Receive() error {
 	_, err := receiveFuture(r)
-	if err != nil {
-		return err
-	}
-
-	return nil
+	return err
 }
 
 // ZExportWalletAsync returns an instance of a type that can be used to get the
@@ -454,11 +450,7 @@ type FutureZImportKeyResult chan *response
 // of importing the passed private key.
 func (r FutureZImportKeyResult) Receive() error {
 	_, err := receiveFuture(r)
-	if err != nil {
-		return err
-	}
-
-	return nil
+	return err
 }
 
 // ZImportKeyAsync returns an instance of a type that can be used to get the
@@ -484,11 +476,7 @@ type FutureZImportWalletResult chan *response
 // key corresponding to the passed address
 func (r FutureZImportWalletResult) Receive() error {
 	_, err := receiveFuture(r)
-	if err != nil {
-		return err
-	}
-
-	return nil
+	return err
 }
 
 // ZImportWalletAsync returns an instance of a type that can be used to get the
