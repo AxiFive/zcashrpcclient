@@ -1,7 +1,7 @@
 zcashrpcclient
 ==============
 
-[![Build Status](https://travis-ci.org/AxiFive/zcashrpcclient.png?branch=master)](https://travis-ci.org/AxiFive/zcashrpcclient)
+[![Build Status](https://travis-ci.org/axifive/zcashrpcclient.png?branch=master)](https://travis-ci.org/axifive/zcashrpcclient)
 [![ISC License](http://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![GoDoc](https://godoc.org/github.com/axifive/zcashrpcclient?status.png)](http://godoc.org/github.com/axifive/zcashrpcclient)
 

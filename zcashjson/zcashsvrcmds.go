@@ -147,8 +147,8 @@ type ZListAddressesCmd struct {
 	MinConf *int `jsonrpcdefault:"1"`
 }
 
-// NewZListAccountsCmd returns a new instance which can be used to issue a
-// z_listaccounts JSON-RPC command.
+// NewZListAddressesCmd returns a new instance which can be used to issue a
+// z_listaddresses JSON-RPC command.
 //
 // The parameters which are pointers indicate they are optional.  Passing nil
 // for optional parameters will use the default value.
